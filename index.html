@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <!-- SEO & Metadata -->
+  <title>Chetan Kumar N K | AI/ML & Generative AI Developer</title>
+  <meta name="description"
+    content="Portfolio of Chetan Kumar N K — Information Science & Engineering student focused on Machine Learning, Generative AI, Data Analytics, intelligent systems and AI automation." />
+  <meta name="keywords"
+    content="Chetan Kumar N K, AI, Machine Learning, Generative AI, RAG, Python, FastAPI, n8n, Computer Vision, IoT, JNNCE, Data Analytics" />
+  <meta name="author" content="Chetan Kumar N K" />
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Chetan Kumar N K | AI/ML & Generative AI Developer" />
+  <meta property="og:description"
+    content="Information Science & Engineering student focused on Machine Learning, Generative AI, Data Analytics, and Intelligent Systems." />
+  <meta property="og:image" content="ezgif-197318b39cdf4553-jpg/ezgif-frame-001.jpg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN & Custom Theme Config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#07070a',
+            burgundy: '#1a0812',
+            crimson: {
+              DEFAULT: '#e62e4c',
+              light: '#ff4766',
+              dark: '#991b1b',
+            },
+            magenta: {
+              DEFAULT: '#d946ef',
+              light: '#f472b6',
+              dark: '#86198f',
+            }
+          },
+          fontFamily: {
+            outfit: ['Outfit', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-obsidian text-slate-100 antialiased selection:bg-crimson selection:text-white">
+
+  <!-- Subtle Custom Cursor (Desktop Only) -->
+  <div id="custom-cursor-dot" class="cursor-dot" aria-hidden="true"></div>
+  <div id="custom-cursor-ring" class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Ambient Atmospheric Background (Subtle Glows & Dark Canvas) -->
+  <div id="ambient-bg-container" class="fixed inset-0 w-full h-full pointer-events-none z-0 overflow-hidden"
+    aria-hidden="true">
+    <!-- Ambient blurred glow matching video lighting -->
+    <div
+      class="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-crimson-glow opacity-25 filter blur-[150px] rounded-full">
+    </div>
+    <div
+      class="absolute bottom-1/4 left-1/4 w-[500px] h-[500px] bg-magenta-glow opacity-20 filter blur-[150px] rounded-full">
+    </div>
+    <div class="absolute inset-0 bg-radial-vignette opacity-90"></div>
+  </div>
+
+  <!-- Floating Navigation Bar -->
+  <header id="navbar" class="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[94%] max-w-6xl transition-all duration-300">
+    <nav
+      class="nav-glass px-5 py-3 rounded-full flex items-center justify-between shadow-2xl border border-white/10 backdrop-blur-xl">
+
+      <!-- Brand Logo -->
+      <a href="#hero" class="flex items-center gap-2.5 group" aria-label="Chetan Kumar N K Home">
+        <div
+          class="w-8 h-8 rounded-full bg-gradient-to-tr from-crimson to-magenta flex items-center justify-center font-outfit font-bold text-white text-sm shadow-glow group-hover:scale-105 transition-transform">
+          CK
+        </div>
+        <div class="flex flex-col">
+          <span
+            class="font-outfit font-bold text-sm tracking-wider text-white group-hover:text-crimson-light transition-colors">CHETAN
+            KUMAR N K</span>
+          <span class="font-mono text-[10px] text-slate-400 tracking-widest uppercase">AI / ML • ISE</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="hidden lg:flex items-center gap-1 xl:gap-2 text-xs font-mono tracking-wider text-slate-300">
+        <li><a href="#about" class="nav-link px-3 py-1.5 rounded-full hover:text-white transition-all">ABOUT</a></li>
+        <li><a href="#skills" class="nav-link px-3 py-1.5 rounded-full hover:text-white transition-all">SKILLS</a></li>
+        <li><a href="#projects" class="nav-link px-3 py-1.5 rounded-full hover:text-white transition-all">PROJECTS</a>
+        </li>
+        <li><a href="#experience"
+            class="nav-link px-3 py-1.5 rounded-full hover:text-white transition-all">EXPERIENCE</a></li>
+        <li><a href="#journey" class="nav-link px-3 py-1.5 rounded-full hover:text-white transition-all">JOURNEY</a>
+        </li>
+        <li><a href="#certifications"
+            class="nav-link px-3 py-1.5 rounded-full hover:text-white transition-all">CERTS</a></li>
+        <li><a href="#cover-letter" class="nav-link px-3 py-1.5 rounded-full hover:text-white transition-all">COVER
+            LETTER</a></li>
+        <li><a href="#resume" class="nav-link px-3 py-1.5 rounded-full hover:text-white transition-all">RESUME</a></li>
+      </ul>
+
+      <!-- CTA Contact / Mobile Menu Toggle -->
+      <div class="flex items-center gap-2.5">
+        <a href="#contact"
+          class="hidden sm:inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-outfit font-semibold bg-gradient-to-r from-crimson to-magenta text-white hover:brightness-110 shadow-glow transition-all hover:scale-105">
+          <span>Let's Talk</span>
+          <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+        </a>
+
+        <button id="mobile-menu-btn"
+          class="lg:hidden p-2 rounded-full text-slate-300 hover:text-white hover:bg-white/10 transition-colors"
+          aria-label="Toggle menu">
+          <i data-lucide="menu" id="menu-icon-open" class="w-5 h-5"></i>
+          <i data-lucide="x" id="menu-icon-close" class="w-5 h-5 hidden"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu"
+      class="hidden lg:hidden mt-2 p-5 rounded-2xl nav-glass border border-white/10 backdrop-blur-2xl shadow-2xl flex-col gap-3 animate-fade-in">
+      <a href="#about" class="mobile-nav-link text-sm font-mono py-2 text-slate-300 hover:text-crimson-light">01.
+        ABOUT</a>
+      <a href="#skills" class="mobile-nav-link text-sm font-mono py-2 text-slate-300 hover:text-crimson-light">02.
+        SKILLS</a>
+      <a href="#projects" class="mobile-nav-link text-sm font-mono py-2 text-slate-300 hover:text-crimson-light">03.
+        PROJECTS</a>
+      <a href="#experience" class="mobile-nav-link text-sm font-mono py-2 text-slate-300 hover:text-crimson-light">04.
+        EXPERIENCE</a>
+      <a href="#journey" class="mobile-nav-link text-sm font-mono py-2 text-slate-300 hover:text-crimson-light">05.
+        JOURNEY & AWARDS</a>
+      <a href="#certifications"
+        class="mobile-nav-link text-sm font-mono py-2 text-slate-300 hover:text-crimson-light">06. CERTIFICATIONS</a>
+      <a href="#cover-letter" class="mobile-nav-link text-sm font-mono py-2 text-slate-300 hover:text-crimson-light">07.
+        ATS COVER LETTER</a>
+      <a href="#resume" class="mobile-nav-link text-sm font-mono py-2 text-slate-300 hover:text-crimson-light">08.
+        RESUME</a>
+      <a href="#contact" class="mobile-nav-link text-sm font-mono py-2 text-crimson-light font-semibold">09. CONTACT ME
+        →</a>
+    </div>
+  </header>
+
+  <!-- Page Content Container -->
+  <main class="relative z-10 w-full overflow-x-hidden">
+
+    <!-- ================================================================= -->
+    <!-- SECTION 1: HERO SECTION (PROPORTIONAL VIDEO & CLEAN BALANCED TYPOGRAPHY) -->
+    <!-- ================================================================= -->
+    <section id="hero" class="min-h-screen relative flex items-center justify-center pt-28 pb-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+
+        <!-- Left Column: Professional Narrative & CTAs (7 Cols) -->
+        <div class="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left z-10">
+
+          <!-- Status Pill -->
+          <div
+            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-5 shadow-inner">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span class="font-mono text-xs text-slate-300 tracking-wider uppercase font-medium">AI / ML • GENERATIVE AI
+              • DATA SCIENCE</span>
+          </div>
+
+          <!-- Name & Title -->
+          <h1
+            class="font-outfit font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight mb-2 leading-tight">
+            Chetan Kumar N K
+          </h1>
+
+          <!-- Role Subtitle -->
+          <p class="font-mono text-xs sm:text-sm text-crimson-light font-semibold tracking-wide uppercase mb-4">
+            Information Science & Engineering • JNNCE
+          </p>
+
+          <!-- Cinematic Headline -->
+          <h2 class="font-outfit text-xl sm:text-2xl lg:text-3xl font-medium text-slate-200 mb-5 leading-snug">
+            Building <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-crimson-light via-pink-400 to-magenta font-semibold">intelligent
+              systems</span> that turn ideas into reality.
+          </h2>
+
+          <!-- Short Bio Description -->
+          <p class="font-sans text-sm sm:text-base text-slate-400 max-w-xl mb-8 leading-relaxed font-light">
+            Focused on Data Science, Machine Learning, Generative AI, LLMs, AI Automation, and RAG Application
+            Architecture. </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 mb-8">
+            <a href="#projects"
+              class="btn-primary flex items-center gap-2 px-5 py-3 rounded-xl font-outfit font-semibold text-sm text-white bg-gradient-to-r from-crimson to-magenta hover:brightness-110 shadow-glow transition-all hover:scale-105">
+              <i data-lucide="sparkles" class="w-4 h-4"></i>
+              <span>View Projects</span>
+            </a>
+
+            <button id="hero-resume-btn"
+              class="open-resume-btn btn-secondary flex items-center gap-2 px-4 py-3 rounded-xl font-outfit font-semibold text-sm text-slate-200 bg-white/5 border border-white/10 hover:border-crimson/50 hover:bg-white/10 backdrop-blur-md transition-all hover:scale-105">
+              <i data-lucide="file-text" class="w-4 h-4 text-crimson-light"></i>
+              <span>My-Resume</span>
+            </button>
+
+            <a href="https://www.linkedin.com/in/chetankumarnk/" target="_blank" rel="noopener noreferrer"
+              class="btn-secondary flex items-center gap-2 px-3.5 py-3 rounded-xl font-outfit font-medium text-sm text-slate-200 bg-white/5 border border-white/10 hover:border-sky-500/50 hover:bg-white/10 backdrop-blur-md transition-all hover:scale-105"
+              title="LinkedIn Profile">
+              <svg class="w-4 h-4 text-[#0a66c2] fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.94 0 1.7-.76 1.7-1.7s-.76-1.7-1.7-1.7-1.7.76-1.7 1.7.76 1.7 1.7 1.7m1.4 9.74v-8.37H5.06v8.37h2.8z" />
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+
+            <a href="https://github.com/chetankumar36" target="_blank" rel="noopener noreferrer"
+              class="btn-secondary flex items-center gap-2 px-3.5 py-3 rounded-xl font-outfit font-medium text-sm text-slate-200 bg-white/5 border border-white/10 hover:border-white/40 hover:bg-white/10 backdrop-blur-md transition-all hover:scale-105"
+              title="GitHub Profile">
+              <svg class="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+              <span>GitHub</span>
+            </a>
+
+            <a href="https://www.credly.com/users/chetan-kumar-n-k" target="_blank" rel="noopener noreferrer"
+              class="btn-secondary flex items-center gap-2 px-3.5 py-3 rounded-xl font-outfit font-medium text-sm text-slate-200 bg-white/5 border border-white/10 hover:border-amber-500/50 hover:bg-white/10 backdrop-blur-md transition-all hover:scale-105"
+              title="Credly Profile & Badges">
+              <i data-lucide="award" class="w-4 h-4 text-amber-400"></i>
+              <span>Credly</span>
+            </a>
+
+            <a href="#contact"
+              class="btn-secondary flex items-center gap-2 px-3.5 py-3 rounded-xl font-outfit font-medium text-sm text-slate-200 bg-white/5 border border-white/10 hover:border-white/20 hover:bg-white/10 backdrop-blur-md transition-all hover:scale-105">
+              <i data-lucide="mail" class="w-4 h-4 text-pink-400"></i>
+              <span class="hidden sm:inline">Contact</span>
+            </a>
+          </div>
+
+          <!-- Quick Badges -->
+          <div
+            class="flex flex-wrap items-center justify-center lg:justify-start gap-2 pt-4 border-t border-white/10 w-full">
+            <span class="skill-tag text-xs">RAG & LLMs</span>
+            <span class="skill-tag text-xs">ML-DL-Neural-Networks</span>
+            <span class="skill-tag text-xs">FastAPI & Python</span>
+            <span class="skill-tag text-xs">n8n Automation</span>
+            <span class="skill-tag text-xs">Agentic-AI</span>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Natural Uncropped Portrait Video Showcase (5 Cols) -->
+        <div class="lg:col-span-5 flex justify-center lg:justify-end z-10">
+          <div
+            class="relative w-full max-w-[340px] sm:max-w-[380px] aspect-[9/14] rounded-3xl overflow-hidden border border-white/20 shadow-2xl shadow-crimson/20 group">
+
+            <!-- Ambient Card Backing Glow -->
+            <div
+              class="absolute -inset-1 bg-gradient-to-r from-crimson to-magenta rounded-3xl blur opacity-30 group-hover:opacity-60 transition duration-1000 group-hover:duration-200">
+            </div>
+
+            <!-- Crisp High Definition Video (Natural proportions, No zoom, Face 100% visible) -->
+            <video id="hero-portrait-video" autoplay loop muted playsinline preload="auto"
+              class="relative w-full h-full object-cover object-center rounded-3xl">
+              <source src="gemini_generated_video_7fbf564b.mp4" type="video/mp4" />
+            </video>
+
+            <!-- Subtle Bottom Vignette for Video Card -->
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent pointer-events-none rounded-3xl">
+            </div>
+
+            <!-- Floating Video Card Badge -->
+            <div
+              class="absolute bottom-4 left-4 right-4 p-3 rounded-2xl bg-black/60 border border-white/10 backdrop-blur-md flex items-center justify-between pointer-events-none">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span class="font-outfit text-xs text-white font-medium">Chetan Kumar N K</span>
+              </div>
+              <span class="font-mono text-[10px] text-pink-300">AI / ML Engineer</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SECTION 2: ABOUT ME & INTERACTIVE GROWTH TIMELINE -->
+    <!-- ================================================================= -->
+    <section id="about" class="py-24 px-4 sm:px-6 lg:px-8 border-t border-white/5">
+      <div class="max-w-6xl mx-auto">
+
+        <!-- Section Header -->
+        <div class="flex flex-col items-center text-center mb-16">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-crimson/10 border border-crimson/20 text-crimson-light text-xs font-mono tracking-wider uppercase mb-3">
+            <i data-lucide="user" class="w-3.5 h-3.5"></i>
+            <span>01 // WHO I AM</span>
+          </div>
+          <h2 class="font-outfit font-extrabold text-3xl sm:text-5xl text-white tracking-tight mb-4">
+            Engineering Intelligence with <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-crimson-light to-magenta">AI</span>
+          </h2>
+          <p class="font-sans text-slate-400 max-w-2xl text-sm sm:text-base">
+            Information Science and Engineering student passionate about Artificial Intelligence, Machine Learning, Data
+            Science, and building intelligent applications that solve real-world problems.
+          </p>
+        </div>
+
+        <!-- Two Column Grid: Bio Cards & Fast Facts -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-20 items-stretch">
+
+          <!-- Left Column: Professional Narrative -->
+          <div
+            class="lg:col-span-7 glass-card p-6 sm:p-8 rounded-3xl border border-white/10 flex flex-col justify-between relative overflow-hidden">
+            <div
+              class="absolute -right-16 -top-16 w-48 h-48 bg-crimson/10 rounded-full filter blur-3xl pointer-events-none">
+            </div>
+
+            <div>
+              <div class="flex items-center gap-3 mb-6">
+                <div
+                  class="w-10 h-10 rounded-xl bg-crimson/20 border border-crimson/30 flex items-center justify-center text-crimson-light">
+                  <i data-lucide="cpu" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h3 class="font-outfit font-bold text-xl text-white">Chetan Kumar N K</h3>
+                  <p class="font-mono text-xs text-slate-400">Information Science & Engineering • JNNCE</p>
+                </div>
+              </div>
+
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
+                I am Chetan Kumar N K, an Information Science and Engineering student passionate about Artificial Intelligence, Machine Learning, and Data Science. I enjoy transforming data into meaningful insights and building intelligent applications that solve real-world problems.
+              </p>
+
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
+                My interests include developing machine learning models, building Generative AI applications, designing Retrieval-Augmented Generation (RAG) systems, and automating workflows using modern AI technologies. I work with Python, SQL, TensorFlow, Scikit-learn, and LangChain, while continuously expanding my knowledge of software development and AI deployment.
+              </p>
+
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+                I enjoy exploring new technologies, working on practical projects, and turning innovative ideas into useful solutions. My goal is to grow as an AI Engineer and contribute to the development of reliable, scalable, and data-driven intelligent systems.
+              </p>
+            </div>
+
+            <!-- Highlights Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-6 border-t border-white/10">
+              <div class="p-3 rounded-xl bg-white/5 border border-white/5">
+                <span class="block font-mono text-[10px] text-slate-400 uppercase">Degree</span>
+                <span class="font-outfit font-semibold text-xs sm:text-sm text-white">B.E. ISE</span>
+              </div>
+              <div class="p-3 rounded-xl bg-white/5 border border-white/5">
+                <span class="block font-mono text-[10px] text-slate-400 uppercase">Institution</span>
+                <span class="font-outfit font-semibold text-xs sm:text-sm text-white">JNNCE, Shivamogga</span>
+              </div>
+              <div class="p-3 rounded-xl bg-white/5 border border-white/5">
+                <span class="block font-mono text-[10px] text-slate-400 uppercase">Graduation</span>
+                <span class="font-outfit font-semibold text-xs sm:text-sm text-white">2027</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Academic & Stat Badges -->
+          <div class="lg:col-span-5 flex flex-col gap-4">
+
+            <!-- Academics Card -->
+            <div class="glass-card p-6 rounded-3xl border border-white/10 relative overflow-hidden">
+              <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center gap-2.5">
+                  <i data-lucide="graduation-cap" class="w-5 h-5 text-pink-400"></i>
+                  <h4 class="font-outfit font-bold text-base text-white">Academic Record</h4>
+                </div>
+                <span
+                  class="px-2.5 py-0.5 rounded-full bg-pink-500/10 text-pink-400 text-[10px] font-mono border border-pink-500/20">Verified</span>
+              </div>
+
+              <div class="space-y-3">
+                <div class="flex items-center justify-between p-3 rounded-xl bg-white/5 border border-white/5">
+                  <div>
+                    <div class="font-outfit font-medium text-xs text-white">B.E. Current Cumulative CGPA</div>
+                    <div class="text-[11px] text-slate-400 font-mono">JNNCE • 2023–2027</div>
+                  </div>
+                  <span class="font-mono font-bold text-sm text-crimson-light">7.57 / 10</span>
+                </div>
+
+                <div class="flex items-center justify-between p-3 rounded-xl bg-white/5 border border-white/5">
+                  <div>
+                    <div class="font-outfit font-medium text-xs text-white">Pre-University (PUC)</div>
+                    <div class="text-[11px] text-slate-400 font-mono">Karnataka State Board</div>
+                  </div>
+                  <span class="font-mono font-bold text-sm text-emerald-400">92.00%</span>
+                </div>
+
+                <div class="flex items-center justify-between p-3 rounded-xl bg-white/5 border border-white/5">
+                  <div>
+                    <div class="font-outfit font-medium text-xs text-white">Secondary Education (SSLC)</div>
+                    <div class="text-[11px] text-slate-400 font-mono">Karnataka Secondary Board</div>
+                  </div>
+                  <span class="font-mono font-bold text-sm text-emerald-400">91.48%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Focus Domains Card -->
+            <div class="glass-card p-6 rounded-3xl border border-white/10 flex-1 flex flex-col justify-between">
+              <div class="flex items-center gap-2.5 mb-4">
+                <i data-lucide="sparkle" class="w-5 h-5 text-crimson-light"></i>
+                <h4 class="font-outfit font-bold text-base text-white">Core Competencies</h4>
+              </div>
+
+              <div class="flex flex-wrap gap-2">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Generative AI & LLMs</span>
+                <span class="skill-tag">RAG Architectures</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Deep Learning</span>
+                <span class="skill-tag">Data Science & Analytics</span>
+                <span class="skill-tag">Workflow Automation(n8n)</span>
+                <span class="skill-tag">AI Application Development</span>
+                <span class="skill-tag">MCP & AI Tool Integration</span>
+                <span class="skill-tag">Agentic AI</span>
+                <span class="skill-tag">FastAPI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Visual Growth Timeline -->
+        <div class="mt-12">
+          <div class="flex items-center justify-between mb-8">
+            <div>
+              <h3 class="font-outfit font-bold text-2xl text-white">Interactive Growth Journey</h3>
+              <p class="font-sans text-xs sm:text-sm text-slate-400">Visual progression from foundational computer
+                science to funded prototypes & research</p>
+            </div>
+            <div class="hidden sm:flex items-center gap-2 text-xs font-mono text-slate-400">
+              <span class="w-2 h-2 rounded-full bg-crimson"></span>
+              <span>2023 — Present</span>
+            </div>
+          </div>
+
+          <div id="growth-timeline-container" class="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
+            <!-- Rendered dynamically via JS for high polish and interactivity -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SECTION 3: TECH STACK (INTERACTIVE & FILTERABLE) -->
+    <!-- ================================================================= -->
+    <section id="skills" class="py-24 px-4 sm:px-6 lg:px-8 border-t border-white/5 relative">
+      <div class="max-w-6xl mx-auto">
+
+        <!-- Section Header -->
+        <div class="flex flex-col items-center text-center mb-12">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-magenta/10 border border-magenta/20 text-pink-400 text-xs font-mono tracking-wider uppercase mb-3">
+            <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+            <span>02 // TECHNICAL ARSENAL</span>
+          </div>
+          <h2 class="font-outfit font-extrabold text-3xl sm:text-5xl text-white tracking-tight mb-4">
+            Curated <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-crimson-light to-magenta">Technology
+              Stack</span>
+          </h2>
+          <p class="font-sans text-slate-400 max-w-2xl text-sm sm:text-base">
+            Categorized technical capabilities across Machine Learning, Data Analytics, Backend Protocols, and Systems
+            Engineering.
+          </p>
+        </div>
+
+        <!-- Tech Category Filters -->
+        <div id="tech-filters" class="flex flex-wrap items-center justify-center gap-2 mb-12">
+          <button class="tech-filter-btn active" data-category="all">All Technologies</button>
+          <button class="tech-filter-btn" data-category="AI / ML & Generative AI">AI / ML & GenAI</button>
+          <button class="tech-filter-btn" data-category="Languages & Core CS">Languages & Core CS</button>
+          <button class="tech-filter-btn" data-category="Backend & Automation">Backend & Automation</button>
+          <button class="tech-filter-btn" data-category="Data & Analytics">Data & Analytics</button>
+          <button class="tech-filter-btn" data-category="DevOps & Tools">DevOps & Tools</button>
+        </div>
+
+        <!-- Tech Cards Grid -->
+        <div id="tech-stack-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Rendered dynamically via app.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SECTION 4: PROJECTS (MAJOR CINEMATIC SECTION) -->
+    <!-- ================================================================= -->
+    <section id="projects" class="py-24 px-4 sm:px-6 lg:px-8 border-t border-white/5 relative">
+      <div class="max-w-6xl mx-auto">
+
+        <!-- Section Header -->
+        <div class="flex flex-col items-center text-center mb-16">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-crimson/10 border border-crimson/20 text-crimson-light text-xs font-mono tracking-wider uppercase mb-3">
+            <i data-lucide="folder-git-2" class="w-3.5 h-3.5"></i>
+            <span>03 // FEATURED WORK</span>
+          </div>
+          <h2 class="font-outfit font-extrabold text-3xl sm:text-5xl text-white tracking-tight mb-4">
+            Engineered <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-crimson-light to-magenta">Intelligent
+              Systems</span>
+          </h2>
+          <p class="font-sans text-slate-400 max-w-2xl text-sm sm:text-base">
+            End-to-end architectures including healthcare robotics, context-grounded RAG pipelines, autonomous email
+            orchestrations, and funded assistive computer vision hardware.
+          </p>
+        </div>
+
+        <!-- Projects Showcase List -->
+        <div id="projects-list-container" class="space-y-12">
+          <!-- Rendered dynamically via app.js with rich interactive cards and architecture flows -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SECTION 5: EXPERIENCE -->
+    <!-- ================================================================= -->
+    <section id="experience" class="py-24 px-4 sm:px-6 lg:px-8 border-t border-white/5 relative">
+      <div class="max-w-5xl mx-auto">
+
+        <!-- Section Header -->
+        <div class="flex flex-col items-center text-center mb-16">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/20 text-pink-400 text-xs font-mono tracking-wider uppercase mb-3">
+            <i data-lucide="briefcase" class="w-3.5 h-3.5"></i>
+            <span>04 // WORK & LEADERSHIP</span>
+          </div>
+          <h2 class="font-outfit font-extrabold text-3xl sm:text-5xl text-white tracking-tight mb-4">
+            Professional <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-crimson-light to-magenta">Experience</span>
+          </h2>
+          <p class="font-sans text-slate-400 max-w-2xl text-sm sm:text-base">
+            Verified internship track record, campus community advocacy, and IEEE technical operations.
+          </p>
+        </div>
+
+        <!-- Experience Vertical Timeline -->
+        <div id="experience-container" class="relative pl-6 sm:pl-10 space-y-10 border-l border-white/10 ml-3 sm:ml-6">
+          <!-- Rendered dynamically via app.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SECTION 6: ACHIEVEMENTS & JOURNEY -->
+    <!-- ================================================================= -->
+    <section id="journey" class="py-24 px-4 sm:px-6 lg:px-8 border-t border-white/5 relative">
+      <div class="max-w-6xl mx-auto">
+
+        <!-- Section Header -->
+        <div class="flex flex-col items-center text-center mb-16">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-mono tracking-wider uppercase mb-3">
+            <i data-lucide="trophy" class="w-3.5 h-3.5"></i>
+            <span>05 // HONORS & RECOGNITION</span>
+          </div>
+          <h2 class="font-outfit font-extrabold text-3xl sm:text-5xl text-white tracking-tight mb-4">
+            Awards, Grants & <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-crimson-light to-magenta">Hackathons</span>
+          </h2>
+          <p class="font-sans text-slate-400 max-w-2xl text-sm sm:text-base">
+            Competitive innovation victories, government research grant awards, national UI/UX accolades, and
+            collaborative tech fests.
+          </p>
+        </div>
+
+        <!-- Interactive Journey Grid -->
+        <div id="achievements-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Rendered dynamically via app.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SECTION 7: CERTIFICATIONS & CREDENTIALS -->
+    <!-- ================================================================= -->
+    <section id="certifications" class="py-24 px-4 sm:px-6 lg:px-8 border-t border-white/5 relative">
+      <div class="max-w-4xl mx-auto">
+
+        <!-- Verification Banner Card -->
+        <div class="glass-card p-8 sm:p-12 rounded-3xl border border-white/15 relative overflow-hidden text-center shadow-2xl">
+          <!-- Background Glow -->
+          <div class="absolute -top-24 -left-24 w-60 h-60 bg-emerald-500/15 rounded-full filter blur-3xl pointer-events-none"></div>
+          <div class="absolute -bottom-24 -right-24 w-60 h-60 bg-sky-500/15 rounded-full filter blur-3xl pointer-events-none"></div>
+
+          <div
+            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono tracking-wider uppercase mb-6">
+            <i data-lucide="shield-check" class="w-4 h-4"></i>
+            <span>06 // VERIFIED CREDENTIALS & BADGES</span>
+          </div>
+
+          <h2 class="font-outfit font-extrabold text-3xl sm:text-5xl text-white tracking-tight mb-4">
+            Certifications & <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-sky-400 to-magenta">Digital Badges</span>
+          </h2>
+
+          <p class="font-sans text-slate-300 max-w-2xl mx-auto text-sm sm:text-base mb-8 leading-relaxed">
+            All completed technical programs, national certifications, and digital badges are officially authenticated and published on my <strong class="text-white font-semibold">LinkedIn</strong> and <strong class="text-white font-semibold">Credly</strong> profiles.
+          </p>
+
+          <!-- Direct Verification CTA Buttons -->
+          <div class="flex flex-wrap items-center justify-center gap-4 mb-10">
+            <a href="https://www.linkedin.com/in/chetankumarnk/" target="_blank" rel="noopener noreferrer"
+              class="px-6 py-3.5 rounded-xl font-outfit font-semibold text-sm text-white bg-gradient-to-r from-[#0077b5] to-[#005582] hover:brightness-110 shadow-glow transition-all hover:scale-105 flex items-center gap-2.5">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.94 0 1.7-.76 1.7-1.7s-.76-1.7-1.7-1.7-1.7.76-1.7 1.7.76 1.7 1.7 1.7m1.4 9.74v-8.37H5.06v8.37h2.8z" />
+              </svg>
+              <span>Check on LinkedIn</span>
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </a>
+
+            <a href="https://www.credly.com/users/chetan-kumar-n-k" target="_blank" rel="noopener noreferrer"
+              class="px-6 py-3.5 rounded-xl font-outfit font-semibold text-sm text-slate-100 bg-white/5 border border-amber-500/30 hover:border-amber-400 hover:bg-white/10 transition-all hover:scale-105 flex items-center gap-2.5">
+              <i data-lucide="award" class="w-5 h-5 text-amber-400"></i>
+              <span>View Badges on Credly</span>
+              <i data-lucide="external-link" class="w-4 h-4 text-slate-400"></i>
+            </a>
+          </div>
+
+          <!-- Issuing Bodies Badges -->
+          <div class="pt-6 border-t border-white/10">
+            <span class="font-mono text-[11px] text-slate-400 uppercase tracking-wider block mb-3">Key Credential Issuers & Programs</span>
+            <div class="flex flex-wrap items-center justify-center gap-2">
+              <span class="skill-tag text-xs font-mono">NPTEL (IIT)</span>
+              <span class="skill-tag text-xs font-mono">Deloitte</span>
+              <span class="skill-tag text-xs font-mono">Infosys Springboard</span>
+              <span class="skill-tag text-xs font-mono">Oasis Infobyte</span>
+              <span class="skill-tag text-xs font-mono">Credly Digital Badges</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SECTION 8: ATS COVER LETTER GENERATOR (INTERACTIVE TOOL) -->
+    <!-- ================================================================= -->
+    <section id="cover-letter" class="py-24 px-4 sm:px-6 lg:px-8 border-t border-white/5 relative">
+      <div class="max-w-5xl mx-auto">
+
+        <!-- Section Header -->
+        <div class="flex flex-col items-center text-center mb-12">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-xs font-mono tracking-wider uppercase mb-3">
+            <i data-lucide="wand-2" class="w-3.5 h-3.5"></i>
+            <span>07 // RECRUITER ASSISTANT</span>
+          </div>
+          <h2 class="font-outfit font-extrabold text-3xl sm:text-5xl text-white tracking-tight mb-4">
+            ATS Cover Letter <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-crimson-light to-magenta">Generator</span>
+          </h2>
+          <p class="font-sans text-slate-400 max-w-2xl text-sm sm:text-base">
+            Generate an instant, ATS-friendly, personalized cover letter tailored to your specific team or role using
+            <em>only</em> verified profile facts.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+          <!-- Generator Input Controls (5 Cols) -->
+          <div class="lg:col-span-5 glass-card p-6 sm:p-7 rounded-3xl border border-white/10">
+            <h3 class="font-outfit font-bold text-lg text-white mb-4 flex items-center gap-2">
+              <i data-lucide="sliders" class="w-4 h-4 text-crimson-light"></i>
+              <span>Role Parameters</span>
+            </h3>
+
+            <!-- Preset Quick Select -->
+            <div class="mb-5">
+              <label class="block font-mono text-[11px] text-slate-400 uppercase tracking-wider mb-2">Select a Role
+                Preset</label>
+              <div class="grid grid-cols-2 gap-2">
+                <button type="button" class="preset-btn active" data-preset="aiml">AI / ML Intern</button>
+                <button type="button" class="preset-btn" data-preset="genai">Generative AI</button>
+                <button type="button" class="preset-btn" data-preset="data">Data Analytics</button>
+                <button type="button" class="preset-btn" data-preset="automation">AI Automation</button>
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div>
+                <label for="cl-company"
+                  class="block font-mono text-[11px] text-slate-400 uppercase tracking-wider mb-1.5">Target Company /
+                  Organization</label>
+                <input id="cl-company" type="text" value="Anthropic"
+                  class="w-full px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm focus:border-crimson focus:outline-none transition-colors"
+                  placeholder="e.g. Google, Microsoft, Startup..." />
+              </div>
+
+              <div>
+                <label for="cl-role"
+                  class="block font-mono text-[11px] text-slate-400 uppercase tracking-wider mb-1.5">Target Job
+                  Title</label>
+                <input id="cl-role" type="text" value="AI / Machine Learning Engineer Intern"
+                  class="w-full px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm focus:border-crimson focus:outline-none transition-colors"
+                  placeholder="e.g. AI/ML Engineer Intern..." />
+              </div>
+
+              <div>
+                <label for="cl-keywords"
+                  class="block font-mono text-[11px] text-slate-400 uppercase tracking-wider mb-1.5">Key Focus / Job
+                  Requirements</label>
+                <textarea id="cl-keywords" rows="3"
+                  class="w-full px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm focus:border-crimson focus:outline-none transition-colors resize-none"
+                  placeholder="e.g. Python, LLMs, RAG, PyTorch, FastAPI, Computer Vision...">Python, Machine Learning, RAG, LLM Integration, Vector Databases, Fast Prototyping</textarea>
+              </div>
+
+              <button id="btn-generate-cover-letter"
+                class="w-full py-3 rounded-xl bg-gradient-to-r from-crimson to-magenta text-white font-outfit font-semibold text-sm hover:brightness-110 shadow-glow transition-all flex items-center justify-center gap-2">
+                <i data-lucide="sparkles" class="w-4 h-4"></i>
+                <span>Generate Tailored Letter</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Letter Output Preview (7 Cols) -->
+          <div class="lg:col-span-7 glass-card p-6 sm:p-8 rounded-3xl border border-white/10 relative">
+            <div class="flex items-center justify-between pb-4 mb-4 border-b border-white/10">
+              <div class="flex items-center gap-2">
+                <div class="w-3 h-3 rounded-full bg-crimson"></div>
+                <div class="w-3 h-3 rounded-full bg-amber-400"></div>
+                <div class="w-3 h-3 rounded-full bg-emerald-400"></div>
+                <span class="font-mono text-xs text-slate-400 ml-2">Tailored_Cover_Letter.txt</span>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <button id="btn-copy-cl"
+                  class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 text-slate-200 text-xs font-mono flex items-center gap-1.5 transition-colors">
+                  <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                  <span id="copy-cl-text">Copy</span>
+                </button>
+                <button id="btn-download-cl"
+                  class="px-3 py-1.5 rounded-lg bg-crimson/20 border border-crimson/40 hover:bg-crimson/30 text-crimson-light text-xs font-mono flex items-center gap-1.5 transition-colors">
+                  <i data-lucide="download" class="w-3.5 h-3.5"></i>
+                  <span>Download .txt</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Letter Body -->
+            <div id="cl-output-body"
+              class="font-sans text-xs sm:text-sm text-slate-300 leading-relaxed space-y-4 max-h-[460px] overflow-y-auto pr-2 custom-scrollbar select-text">
+              <!-- Dynamically populated via JS -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SECTION 9: RESUME DOWNLOAD & VIEWER -->
+    <!-- ================================================================= -->
+    <section id="resume" class="py-24 px-4 sm:px-6 lg:px-8 border-t border-white/5 relative">
+      <div class="max-w-5xl mx-auto">
+
+        <!-- Section Header -->
+        <div class="flex flex-col items-center text-center mb-16">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-mono tracking-wider uppercase mb-3">
+            <i data-lucide="file-check" class="w-3.5 h-3.5"></i>
+            <span>08 // OFFICIAL DOCUMENT</span>
+          </div>
+          <h2 class="font-outfit font-extrabold text-3xl sm:text-5xl text-white tracking-tight mb-4">
+            Curriculum <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-crimson-light to-magenta">Vitae</span>
+          </h2>
+          <p class="font-sans text-slate-400 max-w-2xl text-sm sm:text-base">
+            Explore complete verified educational history, technical proficiencies, project outcomes, and
+            extracurricular leadership.
+          </p>
+        </div>
+
+        <!-- Resume Preview Card -->
+        <div class="glass-card p-6 sm:p-10 rounded-3xl border border-white/10 relative overflow-hidden">
+          <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-white/10">
+            <div class="flex items-center gap-4">
+              <div
+                class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-crimson to-magenta flex items-center justify-center text-white shadow-glow">
+                <i data-lucide="file-text" class="w-7 h-7"></i>
+              </div>
+              <div>
+                <h3 class="font-outfit font-bold text-xl sm:text-2xl text-white">Chetan_Kumar_N_K_resume.pdf</h3>
+                <p class="font-mono text-xs text-slate-400">PDF Document • 84 KB • Official Verified Version</p>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-3">
+              <button
+                class="open-resume-btn px-5 py-2.5 rounded-xl font-outfit font-semibold text-xs sm:text-sm text-white bg-gradient-to-r from-crimson to-magenta hover:brightness-110 shadow-glow transition-all flex items-center gap-2">
+                <i data-lucide="eye" class="w-4 h-4"></i>
+                <span>View & Preview PDF</span>
+              </button>
+              <a href="resume/Chetan_Kumar_N_K_resume.pdf" target="_blank" rel="noopener noreferrer"
+                class="px-4 py-2.5 rounded-xl font-outfit font-medium text-xs sm:text-sm text-slate-200 bg-white/5 border border-white/10 hover:bg-white/10 transition-colors flex items-center gap-2">
+                <i data-lucide="external-link" class="w-4 h-4"></i>
+                <span>Open in Tab</span>
+              </a>
+              <a href="resume/Chetan_Kumar_N_K_resume.pdf" download="Chetan_Kumar_N_K_resume.pdf"
+                class="px-4 py-2.5 rounded-xl font-outfit font-medium text-xs sm:text-sm text-slate-200 bg-white/5 border border-white/10 hover:border-crimson/40 hover:bg-white/10 transition-all flex items-center gap-2">
+                <i data-lucide="download" class="w-4 h-4 text-crimson-light"></i>
+                <span>Download PDF</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Document Key Breakdown -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
+            <div class="p-4 rounded-2xl bg-white/5 border border-white/5">
+              <span
+                class="font-mono text-[11px] text-crimson-light uppercase tracking-wider block mb-1">Education</span>
+              <h4 class="font-outfit font-semibold text-sm text-white mb-1">B.E. in Information Science</h4>
+              <p class="text-xs text-slate-400">JNNCE, Shivamogga (2023–2027) • CGPA 7.57</p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-white/5 border border-white/5">
+              <span class="font-mono text-[11px] text-pink-400 uppercase tracking-wider block mb-1">Top Engineering
+                Works</span>
+              <h4 class="font-outfit font-semibold text-sm text-white mb-1">4 Major AI/IoT Implementations</h4>
+              <p class="text-xs text-slate-400">VideoMind AI, Smart Robo Nurse, AID1 Wearable, n8n Automation</p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-white/5 border border-white/5">
+              <span class="font-mono text-[11px] text-amber-400 uppercase tracking-wider block mb-1">Grants &
+                Accolades</span>
+              <h4 class="font-outfit font-semibold text-sm text-white mb-1">NewGen IEDC & Hackathon Wins</h4>
+              <p class="text-xs text-slate-400">₹10,000 Grant, 1st Place Ideathon, UI/UX 1st Place & AURA 1.0 Runner-up
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SECTION 10: BEYOND THE CODE & LINKEDIN ACTIVITY -->
+    <!-- ================================================================= -->
+    <section id="activity" class="py-24 px-4 sm:px-6 lg:px-8 border-t border-white/5 relative">
+      <div class="max-w-6xl mx-auto">
+
+        <div class="flex flex-col items-center text-center mb-16">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-sky-400 text-xs font-mono tracking-wider uppercase mb-3">
+            <i data-lucide="share-2" class="w-3.5 h-3.5"></i>
+            <span>09 // COMMUNITY & IMPACT</span>
+          </div>
+          <h2 class="font-outfit font-extrabold text-3xl sm:text-5xl text-white tracking-tight mb-4">
+            Beyond the <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-crimson-light to-magenta">Code</span>
+          </h2>
+          <p class="font-sans text-slate-400 max-w-2xl text-sm sm:text-base">
+            Active engagements across competitive hackathons, student technical mentorship, open-source repositories,
+            and IEEE initiatives.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+
+          <div class="glass-card p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center mb-4">
+                <i data-lucide="users-2" class="w-5 h-5"></i>
+              </div>
+              <h4 class="font-outfit font-bold text-base text-white mb-2">HackerRank Campus Crew</h4>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Mentoring junior students and coordinating coding prep sprints to cultivate strong algorithmic
+                problem-solving habits.
+              </p>
+            </div>
+            <span class="mt-4 font-mono text-[10px] text-slate-500">Jun 2026 – Present</span>
+          </div>
+
+          <div class="glass-card p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-4">
+                <i data-lucide="network" class="w-5 h-5"></i>
+              </div>
+              <h4 class="font-outfit font-bold text-base text-white mb-2">IEEE Computer Society</h4>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Core team coordinator for YUGMA TECHFEST 2.0 National-Level AI Hackathon, managing technical tracks and
+                operations.
+              </p>
+            </div>
+            <span class="mt-4 font-mono text-[10px] text-slate-500">Oct 2025 – Present</span>
+          </div>
+
+          <div class="glass-card p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center mb-4">
+                <i data-lucide="palette" class="w-5 h-5"></i>
+              </div>
+              <h4 class="font-outfit font-bold text-base text-white mb-2">UI/UX & Product Design</h4>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Winner of college design contests & national runner-up in AURA 1.0, focusing on human-centered AI
+                software interfaces.
+              </p>
+            </div>
+            <span class="mt-4 font-mono text-[10px] text-slate-500">2026 Recognition</span>
+          </div>
+
+          <div class="glass-card p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
+            <div>
+              <div
+                class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4">
+                <i data-lucide="globe" class="w-5 h-5"></i>
+              </div>
+              <h4 class="font-outfit font-bold text-base text-white mb-2">NASA Space Apps 2025</h4>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Global hackathon participant developing earth observation and space data analytics solutions.
+              </p>
+            </div>
+            <span class="mt-4 font-mono text-[10px] text-slate-500">2025 Global Hackathon</span>
+          </div>
+
+        </div>
+
+        <!-- LinkedIn & Credly Community Banner -->
+        <div
+          class="glass-card p-6 sm:p-8 rounded-3xl border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div class="flex items-center gap-4">
+            <div
+              class="w-12 h-12 rounded-2xl bg-sky-500/20 text-[#0a66c2] flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.94 0 1.7-.76 1.7-1.7s-.76-1.7-1.7-1.7-1.7.76-1.7 1.7.76 1.7 1.7 1.7m1.4 9.74v-8.37H5.06v8.37h2.8z" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-outfit font-bold text-base sm:text-lg text-white">Connect on LinkedIn & Credly</h4>
+              <p class="font-sans text-xs sm:text-sm text-slate-400">Join my network to stay updated on ongoing AI builds, verified certifications, and hackathons.</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 shrink-0">
+            <a href="https://www.linkedin.com/in/chetankumarnk/" target="_blank" rel="noopener noreferrer"
+              class="px-5 py-2.5 rounded-xl font-outfit font-semibold text-xs sm:text-sm text-white bg-gradient-to-r from-sky-600 to-blue-600 hover:brightness-110 shadow-glow transition-all flex items-center gap-2">
+              <span>LinkedIn</span>
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </a>
+            <a href="https://www.credly.com/users/chetan-kumar-n-k" target="_blank" rel="noopener noreferrer"
+              class="px-5 py-2.5 rounded-xl font-outfit font-semibold text-xs sm:text-sm text-slate-200 bg-white/5 border border-amber-500/30 hover:border-amber-400 hover:bg-white/10 transition-all flex items-center gap-2">
+              <i data-lucide="award" class="w-4 h-4 text-amber-400"></i>
+              <span>Credly</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SECTION 11: CONTACT SECTION (FINAL CTA) -->
+    <!-- ================================================================= -->
+    <section id="contact" class="py-28 px-4 sm:px-6 lg:px-8 border-t border-white/5 relative">
+      <div class="max-w-5xl mx-auto">
+
+        <div class="glass-card p-8 sm:p-14 rounded-3xl border border-white/10 relative overflow-hidden text-center">
+          <div
+            class="absolute -left-20 -bottom-20 w-64 h-64 bg-crimson/20 rounded-full filter blur-3xl pointer-events-none">
+          </div>
+          <div
+            class="absolute -right-20 -top-20 w-64 h-64 bg-magenta/20 rounded-full filter blur-3xl pointer-events-none">
+          </div>
+
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-crimson/10 border border-crimson/20 text-crimson-light text-xs font-mono tracking-wider uppercase mb-6">
+            <i data-lucide="send" class="w-3.5 h-3.5"></i>
+            <span>10 // GET IN TOUCH</span>
+          </div>
+
+          <h2 class="font-outfit font-black text-3xl sm:text-5xl md:text-6xl text-white tracking-tight mb-4">
+            Have an idea worth building?
+          </h2>
+
+          <p
+            class="font-outfit text-xl sm:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-crimson-light via-pink-400 to-magenta font-semibold mb-6">
+            Let's create something intelligent.
+          </p>
+
+          <p class="font-sans text-slate-400 max-w-xl mx-auto text-sm sm:text-base mb-10 leading-relaxed">
+            I am always excited to discuss engineering roles, AI research collaborations, internship opportunities, or
+            innovative systems development.
+          </p>
+
+          <!-- Direct Contact Action Buttons -->
+          <div class="flex flex-wrap items-center justify-center gap-4 mb-12">
+            <a href="mailto:chetannaikchetan8@gmail.com"
+              class="px-7 py-3.5 rounded-xl font-outfit font-semibold text-sm text-white bg-gradient-to-r from-crimson to-magenta hover:brightness-110 shadow-glow transition-all hover:scale-105 flex items-center gap-2.5">
+              <i data-lucide="mail" class="w-4 h-4"></i>
+              <span>chetannaikchetan8@gmail.com</span>
+            </a>
+
+            <a href="tel:+918073110116"
+              class="px-6 py-3.5 rounded-xl font-outfit font-medium text-sm text-slate-200 bg-white/5 border border-white/10 hover:bg-white/10 transition-all hover:scale-105 flex items-center gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-emerald-400"></i>
+              <span>+91 8073110116</span>
+            </a>
+          </div>
+
+          <!-- Contact Channels List (4 items) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto pt-8 border-t border-white/10 text-left">
+            <div class="p-3.5 rounded-xl bg-white/5 border border-white/5 flex items-center gap-3">
+              <i data-lucide="map-pin" class="w-5 h-5 text-crimson-light shrink-0"></i>
+              <div>
+                <span class="block font-mono text-[10px] text-slate-400 uppercase">Location</span>
+                <span class="font-outfit text-xs sm:text-sm text-white font-medium">Shivamogga, India</span>
+              </div>
+            </div>
+
+            <a href="https://www.linkedin.com/in/chetankumarnk/" target="_blank" rel="noopener noreferrer"
+              class="p-3.5 rounded-xl bg-white/5 border border-white/10 hover:border-sky-500/50 flex items-center gap-3 transition-colors">
+              <svg class="w-5 h-5 text-[#0a66c2] fill-current shrink-0" viewBox="0 0 24 24">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.94 0 1.7-.76 1.7-1.7s-.76-1.7-1.7-1.7-1.7.76-1.7 1.7.76 1.7 1.7 1.7m1.4 9.74v-8.37H5.06v8.37h2.8z" />
+              </svg>
+              <div>
+                <span class="block font-mono text-[10px] text-slate-400 uppercase">LinkedIn</span>
+                <span class="font-outfit text-xs sm:text-sm text-white font-medium">/in/chetankumarnk</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/chetankumar36" target="_blank" rel="noopener noreferrer"
+              class="p-3.5 rounded-xl bg-white/5 border border-white/10 hover:border-slate-400/50 flex items-center gap-3 transition-colors">
+              <svg class="w-5 h-5 text-white fill-current shrink-0" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+              <div>
+                <span class="block font-mono text-[10px] text-slate-400 uppercase">GitHub</span>
+                <span class="font-outfit text-xs sm:text-sm text-white font-medium">@chetankumar36</span>
+              </div>
+            </a>
+
+            <a href="https://www.credly.com/users/chetan-kumar-n-k" target="_blank" rel="noopener noreferrer"
+              class="p-3.5 rounded-xl bg-white/5 border border-white/10 hover:border-amber-500/50 flex items-center gap-3 transition-colors">
+              <i data-lucide="award" class="w-5 h-5 text-amber-400 shrink-0"></i>
+              <div>
+                <span class="block font-mono text-[10px] text-slate-400 uppercase">Credly</span>
+                <span class="font-outfit text-xs sm:text-sm text-white font-medium">Verified Badges</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 px-4 sm:px-6 lg:px-8 border-t border-white/5 text-center font-mono text-xs text-slate-500">
+      <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p>© 2026 Chetan Kumar N K. Crafted for high performance & intelligence.</p>
+        <div class="flex items-center gap-4">
+          <a href="#hero" class="hover:text-slate-300 transition-colors">Back to top ↑</a>
+          <span>•</span>
+          <a href="Chetan_Kumar_N_K_resume.pdf" download="Chetan_Kumar_N_K_resume.pdf"
+            class="hover:text-crimson-light transition-colors">Resume PDF</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- ================================================================= -->
+  <!-- PROJECT DETAIL MODAL (SHARED-ELEMENT CINEMATIC DRAWER) -->
+  <!-- ================================================================= -->
+  <div id="project-modal"
+    class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 sm:p-6 lg:p-10 backdrop-blur-2xl bg-black/80"
+    role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div id="project-modal-card"
+      class="glass-card w-full max-w-4xl max-h-[90vh] rounded-3xl border border-white/20 shadow-2xl flex flex-col overflow-hidden animate-scale-up">
+
+      <!-- Modal Header -->
+      <div class="p-6 sm:p-8 border-b border-white/10 flex items-center justify-between bg-white/5">
+        <div class="flex items-center gap-3">
+          <span id="modal-project-number"
+            class="font-mono text-xs px-2.5 py-1 rounded-full bg-crimson/20 border border-crimson/40 text-crimson-light font-bold">01</span>
+          <div>
+            <span id="modal-project-category"
+              class="font-mono text-[11px] text-slate-400 uppercase tracking-wider block">IoT & Healthcare</span>
+            <h3 id="modal-project-title" class="font-outfit font-extrabold text-xl sm:text-2xl text-white">Project Title
+            </h3>
+          </div>
+        </div>
+
+        <button id="modal-close-btn"
+          class="p-2.5 rounded-full bg-white/5 hover:bg-white/15 text-slate-300 hover:text-white transition-colors"
+          aria-label="Close modal">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body (Scrollable) -->
+      <div id="modal-project-body" class="p-6 sm:p-8 overflow-y-auto space-y-8 custom-scrollbar">
+        <!-- Rendered dynamically via app.js -->
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="p-4 sm:p-6 border-t border-white/10 bg-white/5 flex flex-wrap items-center justify-between gap-4">
+        <div id="modal-project-status" class="font-mono text-xs text-slate-400">
+          Status: <span class="text-white font-medium">Ongoing Major Project</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <a id="modal-project-github" href="#" target="_blank" rel="noopener noreferrer"
+            class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-mono flex items-center gap-2 transition-colors">
+            <svg class="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+            </svg>
+            <span>GitHub Repo</span>
+          </a>
+          <button id="modal-close-bottom-btn"
+            class="px-4 py-2 rounded-xl bg-crimson/20 border border-crimson/40 hover:bg-crimson/30 text-crimson-light text-xs font-mono transition-colors">
+            Close
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- RESUME PDF VIEWER MODAL (INTERACTIVE EMBEDDED PREVIEW) -->
+  <!-- ================================================================= -->
+  <div id="resume-modal"
+    class="fixed inset-0 z-50 hidden flex items-center justify-center p-3 sm:p-6 lg:p-8 backdrop-blur-2xl bg-black/85"
+    role="dialog" aria-modal="true" aria-labelledby="modal-resume-title">
+    <div
+      class="glass-card w-full max-w-5xl h-[92vh] rounded-3xl border border-white/20 shadow-2xl flex flex-col overflow-hidden animate-scale-up">
+
+      <!-- Modal Header -->
+      <div class="p-4 sm:p-5 border-b border-white/10 flex items-center justify-between bg-white/5">
+        <div class="flex items-center gap-3">
+          <div
+            class="w-9 h-9 rounded-xl bg-crimson/20 border border-crimson/40 flex items-center justify-center text-crimson-light font-bold">
+            <i data-lucide="file-text" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 id="modal-resume-title" class="font-outfit font-extrabold text-base sm:text-lg text-white">Chetan Kumar
+              N K — Resume</h3>
+            <p class="font-mono text-[11px] text-slate-400">Official Curriculum Vitae • JNNCE</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2 sm:gap-3">
+          <a href="resume/Chetan_Kumar_N_K_resume.pdf" target="_blank" rel="noopener noreferrer"
+            class="hidden sm:flex px-3.5 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-mono items-center gap-1.5 transition-colors">
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            <span>Open in Tab</span>
+          </a>
+          <a href="resume/Chetan_Kumar_N_K_resume.pdf" download="Chetan_Kumar_N_K_resume.pdf"
+            class="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-crimson to-magenta hover:brightness-110 text-white text-xs font-outfit font-semibold flex items-center gap-1.5 shadow-glow transition-all">
+            <i data-lucide="download" class="w-3.5 h-3.5"></i>
+            <span>Download PDF</span>
+          </a>
+          <button id="resume-modal-close-btn"
+            class="p-2 rounded-full bg-white/5 hover:bg-white/15 text-slate-300 hover:text-white transition-colors"
+            aria-label="Close resume viewer">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Embedded PDF Viewer Frame -->
+      <div class="flex-1 w-full bg-slate-900/80 relative overflow-hidden flex flex-col">
+        <iframe id="resume-pdf-iframe" src="resume/Chetan_Kumar_N_K_resume.pdf#toolbar=1&navpanes=0"
+          class="w-full h-full border-0 rounded-b-none" title="Chetan Kumar N K Resume PDF"></iframe>
+      </div>
+
+      <!-- Modal Footer -->
+      <div
+        class="p-3 sm:p-4 border-t border-white/10 bg-white/5 flex items-center justify-between text-xs font-mono text-slate-400">
+        <span class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          <span>Verified PDF • Chetan_Kumar_N_K_resume.pdf (84 KB)</span>
+        </span>
+        <button id="resume-modal-close-bottom-btn"
+          class="px-3 py-1 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 transition-colors">
+          Close Preview
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="portfolioData.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
